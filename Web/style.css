@@ -1,0 +1,1838 @@
+/* HUY & THONG - 1 CSS cho toàn website
+   Các trang được tách vùng bằng .home-page, .shop-page, #support, #login, #register.
+   Bố cục chính dùng float/width như CSS gốc; chỉ có 2 điểm ngắt Responsive. */
+* { box-sizing: border-box; }
+body { margin: 0; padding: 0; background-color: #eee8e8; color: #111; }
+.page { display: none; }
+.page.active { display: block; float: left; width: 100%; }
+[hidden] { display: none !important; }
+#website { width: 100%; }
+.shop-page a { color: black; text-decoration: none; }
+.shop-page .pill { color: white; }
+.shop-page .reset-filter { color: #2053a3; }
+.logo a { text-decoration: none; color: white; }
+.home-page, .shop-page, .support-page { background-color: white; }
+.shop-page { background-color: white; }
+.shop-page .pad { float: left; width: 100%; }
+#login, #register { background: #eee8e8; min-height: 75vh; }
+#login .dangnhap, #register .dangky { display: block; }
+.auth-status { font-size: 13px; text-align: center; margin: 14px 0; }
+.auth-exit { display: block; width: 100%; padding: 10px; background: #2053a3; color: white; border: 0; border-radius: 8px; }
+.user a { position: relative; }
+.cart-count { position: absolute; top: -6px; right: -5px; font-size: 11px; background: #2053a3; color: #fff; border-radius: 12px; padding: 2px 5px; }
+.shop-page .review-star { display: inline-block; border: 1px solid #2053a3; background: white; border-radius: 6px; padding: 7px 10px; margin: 4px; color:#2053a3; }
+.shop-page .review-star.selected { background: #2053a3; color: white; }
+.shop-page .review-entry { padding: 10px; border-bottom: 1px solid #ddd; font-size: 13px; }
+#support .khieunai-hang, #support .hotro-footer-noidung { width: 100%; }
+
+/* ========== DESKTOP ========== */
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0;
+    padding: 0;
+    background-color: #eee8e8;
+}
+
+.container {
+width: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.header {
+background-color: black;
+    width: 100%;
+    padding: 12px 20px;
+    float: left;
+}
+
+.logo {
+float: left;
+    width: 15%;
+}
+
+.logo img {
+height: 45px;
+    width: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.menu {
+float: left;
+    width: 65%;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.menu a {
+display: inline-block;
+    width: 90px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+    padding: 6px 5px;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-top: 5px;
+    margin-right: 3px;
+    margin-bottom:3px ;
+}
+
+.menu a:hover {
+background-color: rgb(33, 24, 165);
+}
+
+.user {
+float: right;
+    width: 20%;
+    text-align: right;
+    padding-top: 4px;
+}
+
+.user a {
+display: inline-block;
+    background-color: white;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 3px;
+    font-size: 0;
+}
+
+.user img {
+height: 25px;
+    width: auto;
+    display: block;
+}
+
+.home-page .banner {
+width: 100%;
+    float: left;
+}
+
+.home-page .banner img {
+width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-page .section {
+width: 90%;
+    margin: 5px 5% 0;
+    float: left;
+}
+
+.home-page .left-banner {
+float: left;
+    width: 35%;
+    padding-right: 10px;
+}
+
+.home-page .left-banner img {
+margin-left: 100px;
+    width: 70%;
+    height: auto;
+    max-height: 700px;
+    border-radius: 5px;
+    display: block;
+}
+
+.home-page .sanpham {
+float: left;
+    width: 65%;
+}
+
+.home-page .sanpham1, .home-page .sanpham2, .home-page .sanpham3, .home-page .sanpham4, .home-page .sanpham5, .home-page .sanpham6, .home-page .sanpham7, .home-page .sanpham8 {
+float: left;
+    width: 25%;
+    height: 350px;
+    padding: 5px;
+}
+
+.home-page .sanpham img {
+width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+}
+
+.home-page .sanpham a {
+text-decoration: none;
+    color: black;
+}
+
+.home-page .tên-sanpham {
+font-size: 12px;
+    margin-top: 5px;
+}
+
+.home-page .gia {
+color: blue;
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+.home-page .footer-banner {
+float: left;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.home-page .banner-sale {
+float: left;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+.home-page .banner-sale h2 {
+
+    transform: none;
+    color: black;
+    font-size: 36px;
+    margin: 0;
+    line-height: 50px;
+    animation: none;
+}
+
+.home-page .banner-trai {
+float: left;
+    width: 28%;
+    padding: 10px;
+}
+
+.home-page .banner-trai img {
+width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-page .danhmuc {
+float: left;
+    width: 44%;
+    padding-top: 10px;
+}
+
+.home-page .danhmuc a {
+float: left;
+    width: 25%;
+    height: 100px;
+    padding-top: 40px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-page .danhmuc img {
+display: none;
+}
+
+.home-page .danhmuc .quan {
+background-image: url("images/bannerquanao/quan.png");
+}
+
+.home-page .danhmuc .ao {
+background-image: url("images/bannerquanao/ao.png");
+}
+
+.home-page .danhmuc .mu {
+background-image: url("images/bannerquanao/mu.png");
+}
+
+.home-page .danhmuc .tui {
+background-image: url("images/bannerquanao/tui.png");
+}
+
+.home-page .Summerbanner {
+float: left;
+    width: 44%;
+    height: 165px;
+    padding: 0;
+    margin-top: 5px;
+    background-image: url("images/summerbanner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.home-page .Summerbanner img {
+display: none;
+}
+
+.home-page .banner-phai {
+position: absolute;
+    right: 0;
+    top: 90px;
+    width: 28%;
+    padding: 10px;
+}
+
+.home-page .banner-phai img {
+width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shop-page {
+display: none;
+}
+
+.shop-page.active {
+display: block;
+    float: left;
+    width: 100%;
+}
+
+.shop-page .pad {
+float: left;
+    width: 100%;
+    padding: 24px 4%;
+}
+
+.shop-page .sec {
+border-bottom: 1px solid #ccc;
+}
+
+.shop-page .pill {
+display: inline-block;
+    padding: 10px 18px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.shop-page .pill:hover {
+background-color: #347be0;
+}
+
+.shop-page .hero {
+float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.shop-page .hero-text {
+float: left;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.shop-page .hero-text h2 {
+color: #2053a3;
+    font-size: 23px;
+}
+
+.shop-page .hero-text p {
+color: #555;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.shop-page .section-heading {
+float: left;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.shop-page .section-heading h2 {
+float: left;
+    width: 65%;
+    margin-top: 8px;
+    color: #2053a3;
+    font-size: 22px;
+}
+
+.shop-page .section-heading .pill {
+float: right;
+}
+
+.shop-page .page-title {
+color: #2053a3;
+    font-size: 24px;
+}
+
+.shop-page .muted, .shop-page .note {
+color: #555;
+    font-size: 13px;
+}
+
+.shop-page .list {
+float: left;
+    width: 100%;
+}
+
+.shop-page .card, .home-page .sanpham .card {
+float: left;
+    display: block;
+    width: 25%;
+    height: 320px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.shop-page #grid .card, .shop-page #related .card {
+width: 20%;
+}
+
+.shop-page #homeProducts .card, .shop-page #heroList .card {
+width: 25%;
+}
+
+.shop-page .card:hover, .home-page .sanpham .card:hover {
+border-color: #2053a3;
+}
+
+.shop-page .img, .home-page .sanpham .img {
+width: 100%;
+    height: 240px;
+    padding: 8px;
+    background-color: #eee;
+    text-align: center;
+}
+
+.shop-page .img img, .home-page .sanpham .img img {
+display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.shop-page .img svg, .home-page .sanpham .img svg {
+width: 75%;
+    max-height: 100%;
+}
+
+.shop-page .card p, .home-page .sanpham .card p {
+margin: 7px 0 4px;
+    padding: 0 5px;
+    color: black;
+    font-size: 12px;
+}
+
+.shop-page .meta, .home-page .sanpham .meta {
+padding: 0 5px;
+    font-size: 12px;
+}
+
+.shop-page .meta b, .home-page .sanpham .meta b {
+color: blue;
+}
+
+.shop-page .dot {
+display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.shop-page .filters {
+float: left;
+    width: 100%;
+}
+
+.shop-page .filters input, .shop-page .filters select {
+float: left;
+    width: 12%;
+    height: 38px;
+    margin: 5px 0.5%;
+    padding: 6px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.shop-page .filters input {
+width: 25%;
+}
+
+.shop-page .filters .go {
+float: left;
+    width: 10%;
+    height: 38px;
+    margin: 5px 0.5%;
+    padding: 5px;
+    background-color: #2053a3;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.shop-page .reset-filter {
+float: left;
+    width: 10%;
+    height: 38px;
+    margin: 5px 0.5%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #2053a3;
+    border-radius: 8px;
+    color: #2053a3;
+}
+
+.shop-page .empty {
+padding: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.shop-page .empty[hidden] {
+display: none;
+}
+
+.shop-page .pager {
+float: left;
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.shop-page .pager button {
+display: inline-block;
+    min-width: 34px;
+    height: 34px;
+    margin: 2px;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+.shop-page .pager .on {
+background-color: #2053a3;
+    color: white;
+}
+
+.shop-page .detail {
+float: left;
+    width: 100%;
+}
+
+.shop-page .thumbs {
+float: left;
+    width: 12%;
+    padding: 0 8px;
+}
+
+.shop-page .th {
+width: 75px;
+    max-width: 100%;
+    height: 75px;
+    margin-bottom: 10px;
+    padding: 7px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.shop-page .th svg {
+width: 100%;
+    max-height: 100%;
+}
+
+.shop-page .main {
+float: left;
+    width: 42%;
+    height: 405px;
+    padding: 15px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.shop-page .main img {
+display: inline-block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.shop-page .main svg {
+width: 75%;
+}
+
+.shop-page .info {
+float: left;
+    width: 46%;
+    padding: 6px 15px;
+    background-color: white;
+}
+
+.shop-page .info h1 {
+font-size: 22px;
+}
+
+.shop-page .info .code {
+margin: 6px 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.shop-page .info .price {
+color: blue;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.shop-page .info hr {
+margin: 14px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.shop-page .label {
+margin-bottom: 8px;
+    font-size: 12px;
+}
+
+.shop-page .row {
+float: left;
+    width: 100%;
+    margin: 6px 0;
+}
+
+.shop-page .cdot, .shop-page .size {
+display: inline-block;
+    min-width: 54px;
+    height: 33px;
+    margin: 3px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid #2053a3;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.shop-page .cdot.on, .shop-page .size.on {
+background-color: #2053a3;
+    color: white;
+}
+
+.shop-page .qty {
+float: left;
+    width: 40%;
+    border: 1px solid #2053a3;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.shop-page .qty button {
+width: 30%;
+    height: 34px;
+    background-color: white;
+    border: none;
+}
+
+.shop-page .qty span {
+display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+
+.shop-page .wide {
+float: left;
+    width: 58%;
+    min-height: 36px;
+    margin-left: 2%;
+    padding: 7px;
+    background-color: white;
+    color: #2053a3;
+    border: 1px solid #2053a3;
+    border-radius: 8px;
+}
+
+.shop-page .buy {
+width: 100%;
+    margin: 10px 0 0;
+    background-color: #2053a3;
+    color: white;
+}
+
+.shop-page .desc {
+float: left;
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.shop-page .desc h3 {
+font-size: 16px;
+}
+
+.shop-page .desc p {
+color: #555;
+    font-size: 13px;
+}
+
+.shop-page .reviews h2 {
+font-size: 20px;
+}
+
+.shop-page #revText {
+width: 100%;
+    max-width: 600px;
+    min-height: 85px;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+.shop-page .link {
+background-color: white;
+    color: #2053a3;
+    border: none;
+    text-decoration: underline;
+}
+
+.shop-page .related h2 {
+margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.shop-page .about h1 {
+margin-bottom: 12px;
+    color: #2053a3;
+    font-size: 26px;
+}
+
+.shop-page .about .lead {
+margin-bottom: 22px;
+    color: #555;
+    font-size: 13px;
+}
+
+.shop-page .about .box {
+float: left;
+    width: 33.33%;
+    min-height: 170px;
+    padding: 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.shop-page .about .box h3 {
+color: #2053a3;
+    font-size: 16px;
+}
+
+.shop-page .about .box p {
+color: #555;
+    font-size: 13px;
+}
+
+.shop-page .cart-item {
+float: left;
+    width: 100%;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.shop-page .cart-image {
+float: left;
+    width: 20%;
+    max-width: 120px;
+    height: auto;
+    max-height: 140px;
+    border-radius: 8px;
+}
+
+.shop-page .cart-info {
+float: left;
+    width: 80%;
+    padding: 0 10px;
+}
+
+.shop-page .cart-info h3 {
+margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.shop-page .cart-info p {
+margin: 6px 0;
+    font-size: 13px;
+}
+
+.shop-page .cart-info button {
+padding: 8px 12px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.shop-page #cartTotal {
+float: left;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.shop-page #clearCart {
+margin-right: 10px;
+}
+
+#support .hotro-banner {
+float: left;
+    width: 100%;
+    min-height: 360px;
+    padding: 65px 4%;
+    background-image: url("images/bannerhotro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#support .hotro-gioithieu {
+float: left;
+    width: 43%;
+    padding-top: 70px;
+    color: #111;
+}
+
+#support .hotro-gioithieu p {
+font-size: 12px;
+    color: #2053a3;
+    margin-bottom: 5px;
+}
+
+#support .hotro-gioithieu h2 {
+font-size: 22px;
+    margin: 0;
+}
+
+#support .hotro-thongtin {
+float: left;
+    width: 32%;
+    text-align: left;
+}
+
+#support .hotro-thongtin label {
+display: block;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: black;
+}
+
+#support .hotro-thongtin input {
+display: block;
+    width: 90%;
+    height: 32px;
+    margin: 0 auto 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+#support .hotro-nut {
+float: left;
+    width: 25%;
+    text-align: center;
+    padding-top: 110px;
+}
+
+#support .hotro-nut a {
+display: inline-block;
+    background-color: #2053a3;
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+#support .hotro-nut a:hover {
+background-color: #347be0;
+}
+
+#support .khieunai {
+float: left;
+    width: 100%;
+    background-color: white;
+    padding: 40px 5%;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#support .khieunai-trai {
+float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+#support .khieunai-trai p {
+font-size: 13px;
+    color: #555;
+}
+
+#support .khieunai-trai h2 {
+font-size: 28px;
+    color: #111;
+    margin: 10px 0;
+}
+
+#support .khieunai-trai hr {
+width: 60px;
+    margin-left: 0;
+    border: 2px solid #2053a3;
+}
+
+#support .khieunai-phai {
+float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+#support .khieunai-hang {
+float: left;
+    width: 100%;
+}
+
+#support .khieunai-o {
+float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+#support .khieunai-o label {
+display: block;
+    font-size: 12px;
+    color: #2053a3;
+    margin-bottom: 5px;
+}
+
+#support .khieunai-o input {
+width: 100%;
+    height: 38px;
+    border: 2px solid #999;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+}
+
+#support .khieunai-noidung {
+float: left;
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#support .khieunai-noidung label {
+display: block;
+    font-size: 12px;
+    color: #2053a3;
+    margin-bottom: 5px;
+}
+
+#support .khieunai-noidung input {
+width: 100%;
+    height: 140px;
+    border: 2px solid #999;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#support .nut-khieunai {
+width: 100%;
+    height: 45px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#support .nut-khieunai:hover {
+background-color: #347be0;
+}
+
+#support .hotro-khoangcach {
+float: left;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+#support .hotro-footer {
+float: left;
+    width: 100%;
+    background-color: #24539f;
+    color: black;
+    padding: 20px 2%;
+    margin: 0;
+}
+
+#support .hotro-footer-noidung {
+float: left;
+    width: 100%;
+}
+
+#support .hotro-cot {
+float: left;
+    width: 32%;
+    margin: 0 0.66%;
+    background-color: white;
+    min-height: 245px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+#support .hotro-tieude {
+font-size: 15px;
+    color: #111;
+    padding-bottom: 8px;
+    margin: 0 0 12px;
+    border-bottom: 2px solid #2457ad;
+}
+
+#support .hotro-dong {
+width: 100%;
+    min-height: 34px;
+    margin: 0 0 10px;
+}
+
+#support .hotro-bieutuong {
+float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 9px;
+    background-color: #e7edfa;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#support .hotro-nhan {
+display: block;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #333;
+}
+
+#support .hotro-giatri {
+display: block;
+    font-size: 12px;
+    color: #111;
+}
+
+#support .hotro-ban-do {
+width: 100%;
+    height: 110px;
+    padding-top: 34px;
+    background-color: #e5ebf7;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#support .hotro-ghim {
+display: block;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+#support .hotro-ban-do-chu {
+margin: 2px 0 0;
+    font-size: 12px;
+    color: #1d376b;
+}
+
+#login .dangnhap {
+width: 350px;
+    max-width: 95%;
+    background-color: white;
+    margin: 40px auto;
+    padding: 15px 20px;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+#login .logo {
+width: 100%;
+}
+
+#login .logo img {
+width: 65px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#login .tieude {
+text-align: center;
+    margin-top: 10px;
+}
+
+#login .tieude h3 {
+font-size: 15px;
+    margin: 5px 0;
+}
+
+#login .tieude p {
+font-size: 11px;
+    margin: 0;
+}
+
+#login .noidung {
+width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#login .noidung h3 {
+font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+#login .noidung input {
+width: 100%;
+    height: 26px;
+    margin-bottom: 12px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    font-size: 11px;
+}
+
+#login .noidung button {
+width: 100%;
+    height: 38px;
+    margin-top: 10px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#login .noidung button:hover {
+background-color: #347be0;
+}
+
+#login .dangnhapvadangki {
+width: 100%;
+    margin-top: 8px;
+}
+
+#login .dangnhapvadangki p {
+font-size: 8px;
+    margin: 5px 0;
+}
+
+#login .dangnhapvadangki a {
+text-decoration: none;
+}
+
+#login .google, #login .facebook, #login .linkedin {
+display: inline-block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+#login .google, #login .facebook, #login .linkedin {
+display: inline-block;
+    margin-right: 5px;
+}
+
+#login .google img, #login .facebook img, #login .linkedin img {
+width: 22px;
+    height: 22px;
+    display: block;
+}
+
+#login .quenmatkhau {
+float: right;
+    font-size: 9px;
+    color: black;
+    margin-top: 5px;
+}
+
+#login .quenmatkhau:hover {
+color: #2053a3;
+}
+
+#login .noidung label {
+display: block;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#login .noidung input {
+width: 100%;
+    height: 26px;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+#login .nutdangnhap {
+display: block;
+    width: 100%;
+    height: 38px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#login .nutdangnhap:hover {
+background-color: #347be0;
+}
+
+#register .dangky {
+width: 315px;
+    max-width: 95%;
+    background-color: white;
+    margin: 8px auto;
+    padding: 15px 18px;
+    border: 1px solid #999;
+    border-radius: 7px;
+}
+
+#register .logo {
+width: 100%;
+}
+
+#register .logo img {
+width: 55px;
+    height: auto;
+    display: block;
+}
+
+#register .tieude {
+text-align: center;
+    margin-top: 10px;
+}
+
+#register .tieude h3 {
+font-size: 14px;
+    margin: 5px 0;
+}
+
+#register .tieude p {
+font-size: 11px;
+    margin: 0;
+}
+
+#register .noidung {
+width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register .noidung h3 {
+font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+#register .noidung label {
+display: block;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+#register .noidung input {
+display: block;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 12px;
+    padding: 5px;
+    border: 1px solid #bbb;
+    border-radius: 7px;
+}
+
+#register .nutdangky {
+display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #2053a3;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+#register .nutdangky:hover {
+background-color: #347be0;
+}
+
+#register .duoi {
+width: 100%;
+    margin-top: 8px;
+}
+
+#register .duoi p {
+font-size: 8px;
+    margin: 5px 0;
+}
+
+#register .duoi a {
+text-decoration: none;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#register .duoi img {
+width: 22px;
+    height: 22px;
+}
+
+#register .dacotaikhoan {
+float: right;
+    font-size: 9px;
+    color: black;
+    margin-top: 6px;
+}
+
+#register .dacotaikhoan:hover {
+color: #2053a3;
+}
+
+/* ========== IPAD: 3 san pham / hang ========== */
+@media (min-width: 601px) and (max-width: 1023px) {
+.header {
+padding: 10px;
+}
+
+.logo {
+float: left;
+        width: 12%;
+}
+
+.logo img {
+height: 40px;
+}
+
+.menu {
+float: left;
+        width: 72%;
+        text-align: center;
+        font-size: 0;
+}
+
+.menu a {
+display: inline-block;
+        width: 19%;
+        margin: 0 0.5%;
+        padding: 6px 0;
+        font-size: 11px;
+        text-align: center;
+}
+
+.user {
+float: right;
+        width: 16%;
+        text-align: right;
+        padding: 0;
+}
+
+.user a {
+padding: 5px;
+        margin: 2px;
+}
+
+.user img {
+height: 22px;
+}
+
+.home-page .left-banner {
+float: none;
+        width: 85%;
+        max-width: 450px;
+        height: 180px;
+        margin: 15px auto;
+        padding: 0;
+        background-image: url("images/bannerleft.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+}
+
+.home-page .left-banner img {
+display: none;
+}
+
+.home-page .sanpham {
+float: left;
+        width: 100%;
+}
+
+.home-page .sanpham1, .home-page .sanpham2, .home-page .sanpham3, .home-page .sanpham4, .home-page .sanpham5, .home-page .sanpham6, .home-page .sanpham7, .home-page .sanpham8 {
+float: left;
+        width: 33.33%;
+        height: 48vw;
+        min-height: 0;
+        padding: 5px;
+}
+
+.home-page .sanpham img {
+width: 100%;
+        height: auto;
+        display: block;
+}
+
+.home-page .banner-sale h2 {
+font-size: 25px;
+}
+
+.shop-page .pad {
+padding: 20px 3%;
+}
+
+.home-page .sanpham .card, .shop-page #homeProducts .card, .shop-page #heroList .card, .shop-page #grid .card, .shop-page #related .card {
+width: 33.33%;
+        height: 315px;
+}
+
+.shop-page .img, .home-page .sanpham .img {
+height: 230px;
+}
+
+.shop-page .filters input {
+width: 28%;
+}
+
+.shop-page .filters select {
+width: 20%;
+}
+
+.shop-page .filters .go, .shop-page .reset-filter {
+width: 16%;
+}
+
+.shop-page .thumbs {
+width: 13%;
+}
+
+.shop-page .main {
+width: 42%;
+        height: 360px;
+}
+
+.shop-page .info {
+width: 45%;
+}
+
+#support .hotro-banner {
+padding: 40px 3%;
+}
+
+#support .hotro-gioithieu {
+width: 40%;
+        padding-top: 65px;
+}
+
+#support .hotro-gioithieu h2 {
+font-size: 17px;
+}
+
+#support .hotro-thongtin {
+width: 35%;
+}
+
+#support .hotro-nut {
+width: 25%;
+}
+
+#support .khieunai {
+padding: 30px 3%;
+}
+
+#support .khieunai-trai h2 {
+font-size: 22px;
+}
+
+#support .hotro-cot {
+padding: 12px;
+        min-height: 245px;
+}
+
+#support .hotro-tieude {
+font-size: 12px;
+}
+
+#support .hotro-giatri {
+font-size: 11px;
+}
+
+#support .hotro-bieutuong {
+margin-right: 6px;
+}
+}
+
+/* ========== MOBILE: 2 san pham / hang ========== */
+@media (max-width: 600px) {
+.header {
+padding: 10px;
+}
+
+.logo {
+float: left;
+        width: 100%;
+        text-align: left;
+}
+
+.logo img {
+height: 40px;
+        margin: 0;
+}
+
+.menu {
+float: left;
+        width: 100%;
+        padding-top: 10px;
+}
+
+.menu a {
+width: 60px;
+    font-size: 11px;
+    padding: 6px 2px;
+}
+
+.user {
+float: left;
+        width:100%;
+        text-align: right;
+        padding-top: 8px;
+}
+
+.home-page .section {
+width: 94%;
+        margin: 5px 3%;
+}
+
+.home-page .left-banner {
+float: none;
+        width: 90%;
+        height: 180px;
+        margin: 15px auto;
+        padding: 0;
+        background-image: url("images/bannerleft.png");
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+}
+
+.home-page .left-banner img {
+display: none;
+}
+
+.home-page .sanpham {
+float: left;
+        width: 100%;
+}
+
+.home-page .sanpham1, .home-page .sanpham2, .home-page .sanpham3, .home-page .sanpham4, .home-page .sanpham5, .home-page .sanpham6, .home-page .sanpham7, .home-page .sanpham8 {
+float: left;
+        width: 50%;
+        height: 300px;
+        min-height: 0;
+        padding: 5px;
+}
+
+.home-page .sanpham img {
+width: 100%;
+        height: auto;
+        display: block;
+}
+
+.home-page .tên-sanpham {
+font-size: 11px;
+        margin-top: 5px;
+}
+
+.home-page .gia {
+font-size: 11px;
+        margin-top: 3px;
+}
+
+.home-page .banner-sale {
+padding: 6px 4px;
+}
+
+.home-page .banner-sale h2 {
+font-size: 16px;
+        margin: 0;
+        line-height: 1.3;
+}
+
+.home-page .banner-trai {
+float: left;
+        width: 50%;
+        padding: 5px;
+        margin: 0;
+}
+
+.home-page .banner-phai {
+position: relative;
+        right: auto;
+        bottom: auto;
+        float: left;
+        width: 50%;
+}
+
+.home-page .banner-phai img {
+width: 100%;
+        height: auto;
+        margin: 0;
+}
+
+.home-page .danhmuc {
+float: left;
+        width: 100%;
+        padding: 5px;
+}
+
+.home-page .danhmuc a {
+float: left;
+        width: 25%;
+}
+
+.home-page .Summerbanner {
+float: left;
+        width: 100%;
+        height: auto;
+        margin: 0;
+}
+
+.home-page .Summerbanner img {
+display: block;
+        width: 100%;
+        height: auto;
+}
+
+.shop-page .pad {
+padding: 18px 3%;
+}
+
+.shop-page .hero-text h2 {
+font-size: 19px;
+}
+
+.shop-page .section-heading h2 {
+float: left;
+        width: 100%;
+        font-size: 18px;
+}
+
+.shop-page .section-heading .pill {
+float: left;
+        margin-top: 5px;
+}
+
+.home-page .sanpham .card, .shop-page #homeProducts .card, .shop-page #heroList .card, .shop-page #grid .card, .shop-page #related .card {
+width: 50%;
+        height: 295px;
+}
+
+.shop-page .img, .home-page .sanpham .img {
+height: 210px;
+        padding: 5px;
+}
+
+.shop-page .card p, .shop-page .meta, .home-page .sanpham .card p, .home-page .sanpham .meta {
+font-size: 11px;
+}
+
+.shop-page .filters input {
+width: 99%;
+}
+
+.shop-page .filters select {
+width: 49%;
+}
+
+.shop-page .filters .go, .shop-page .reset-filter {
+width: 49%;
+}
+
+.shop-page .thumbs {
+width: 100%;
+        padding: 0;
+}
+
+.shop-page .th {
+float: left;
+        width: 18%;
+        height: 65px;
+        margin: 0 1% 10px;
+        padding: 5px;
+}
+
+.shop-page .main {
+width: 100%;
+        height: 320px;
+        margin-bottom: 15px;
+}
+
+.shop-page .info {
+width: 100%;
+        padding: 8px 0;
+}
+
+.shop-page .info h1 {
+font-size: 19px;
+}
+
+.shop-page .qty {
+width: 40%;
+}
+
+.shop-page .wide {
+width: 58%;
+}
+
+.shop-page .buy {
+width: 100%;
+}
+
+.shop-page .related h2 {
+font-size: 18px;
+}
+
+.shop-page .about .box {
+width: 100%;
+        min-height: 0;
+        margin: 5px 0;
+}
+
+.shop-page .cart-image {
+width: 25%;
+}
+
+.shop-page .cart-info {
+width: 75%;
+}
+
+#support .hotro-banner {
+height: auto;
+        padding: 30px 5%;
+}
+
+#support .hotro-gioithieu {
+float: left;
+        width: 100%;
+        padding: 10px 0 20px;
+        text-align: center;
+}
+
+#support .hotro-gioithieu h2 {
+font-size: 18px;
+}
+
+#support .hotro-thongtin {
+float: left;
+        width: 100%;
+}
+
+#support .hotro-nut {
+float: left;
+        width: 100%;
+        padding-top: 10px;
+}
+
+#support .khieunai {
+padding: 20px 4%;
+}
+
+#support .khieunai-trai {
+float: left;
+        width: 100%;
+}
+
+#support .khieunai-phai {
+float: left;
+        width: 100%;
+}
+
+#support .khieunai-o {
+float: left;
+        width: 100%;
+}
+
+#support .khieunai-trai h2 {
+font-size: 22px;
+}
+
+#support .hotro-khoangcach {
+height: 50px;
+}
+
+#support .hotro-footer {
+padding: 15px 2%;
+}
+
+#support .hotro-cot {
+float: left;
+        width: 98%;
+        margin: 5px 1%;
+        min-height: 0;
+        height: auto;
+}
+
+#support .hotro-tieude {
+font-size: 14px;
+}
+}
+
+/* Chỉ hiển thị tên shop khi ảnh logo không tải được */
+.header .logo .logo-chu {
+    display: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 0;
+}

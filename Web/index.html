@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Huy &amp; Thông Fashion | Shop thời trang</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container"><header class="header">
+<div class="logo"><a href="#/home"><img alt="Huy &amp; Thông Fashion" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-block'" src="images/logo.png"/><span class="logo-chu">HUY &amp; THÔNG</span></a></div>
+<div class="menu">
+<a href="#/home">Trang Chủ</a>
+<a href="#/products">Sản Phẩm</a>
+<a href="#/sale">Sale</a>
+<a href="#/about">Giới thiệu</a>
+<a href="#/support">Hỗ trợ</a>
+</div>
+<div class="user">
+<a href="#/login"><img alt="Tài Khoản" src="images/taikhoan.png"/><br/>tài khoản</a>
+<a href="#/cart"><img alt="Giỏ hàng" src="images/giohnag.png"/>Giỏ hàng<span class="cart-count" hidden="" id="count">0</span></a>
+</div>
+</header></div>
+<main id="website">
+<!-- TRANG CHỦ -->
+<section class="page active home-page" id="home"><div class="banner">
+<img alt="Banner" src="images/banner.png"/>
+</div>
+<div class="section">
+<div class="left-banner">
+<img alt="Best-Seller" src="images/bannerleft.png"/>
+</div>
+<div class="sanpham">
+<a class="card" href="#/product/7"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/quan1.png"/></div><p>Quần Jeans Nam Rustic Nomad Form Baggy</p><div class="meta"><b>200.000đ</b></div></a>
+<a class="card" href="#/product/8"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/ao1.png"/></div><p>Áo Thun Nam Archive Mode Form Boxy</p><div class="meta"><b>350.000đ</b></div></a>
+<a class="card" href="#/product/4"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/ao2.png"/></div><p>Áo Thun Nam Garfield Faded Vintage Form Boxy</p><div class="meta"><b>400.000đ</b></div></a>
+<a class="card" href="#/product/15"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/ao3.png"/></div><p>Áo Thun Nam Homefield Form Regular</p><div class="meta"><b>400.000đ</b></div></a>
+<a class="card" href="#/product/5"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/quan2.png"/></div><p>Quần Short Linen Nam Azura Form Regular</p><div class="meta"><b>400.000đ</b></div></a>
+<a class="card" href="#/product/6"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/non1.png"/></div><p>Nón Lưỡi Trai Nam Intials</p><div class="meta"><b>250.000đ</b></div></a>
+<a class="card" href="#/product/3"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/ao4.png"/></div><p>Áo Sơ Mi Nam Tay Ngắn Cuban Donald Emblem Form Relaxed</p><div class="meta"><b>500.000đ</b></div></a>
+<a class="card" href="#/product/10"><div class="img"><img alt="Sản Phẩm" src="images/bestseller/ao5.png"/></div><p>Áo Sơ Mi Nam Tay Ngắn Classic Green Goof Form Relaxed</p><div class="meta"><b>450.000đ</b></div></a>
+</div>
+</div>
+<footer class="footer-banner">
+<div class="banner-sale">
+<h2>HÀNG OUTLET SALE UP TO 60%</h2>
+</div>
+<div class="banner-trai">
+<img alt="Super Sale" src="images/bannerunderleft.png"/>
+</div>
+<div class="banner-phai">
+<img alt="Sale 60%" src="images/bannerunderright.png"/>
+</div>
+<div class="danhmuc">
+<a class="quan" href="#/products"><img alt="Sản Phẩm" src="images/bannerquanao/quan.png"/>Quần </a>
+<a class="ao" href="#/products"><img alt="Sản Phẩm" src="images/bannerquanao/ao.png"/>Áo</a>
+<a class="mu" href="#/products"><img alt="Sản Phẩm" src="images/bannerquanao/mu.png"/>Mũ</a>
+<a class="tui" href="#/products"><img alt="Sản Phẩm" src="images/bannerquanao/tui.png"/>Túi</a>
+</div>
+<div class="Summerbanner">
+<img alt="Summer banner" src="images/summerbanner.png"/>
+</div>
+</footer></section>
+<!-- GIỚI THIỆU BỘ SƯU TẬP VÀ CÁC TRANG SẢN PHẨM -->
+<section class="page shop-page" id="collection">
+<!-- Phần 1: Bộ sưu tập mới (chữ bên trái + 4 sản phẩm) -->
+<div class="hero pad sec">
+<div class="hero-text">
+<h2>BỘ SƯU TẬP MỚI</h2>
+<p>Khám phá những mẫu thời trang mới nhất</p>
+<a class="pill" href="#/products">Khám phá ngay →</a>
+</div>
+<div class="list" id="heroList"></div> <!-- chọn số lượng sản phẩm chưng bày -->
+</div>
+<!-- Trang chủ chỉ trưng bày một số sản phẩm nổi bật -->
+<div class="pad sec">
+<div class="section-heading">
+<h2>SẢN PHẨM NỔI BẬT</h2>
+<a class="pill" href="#/products">Xem tất cả sản phẩm →</a>
+</div>
+<div class="list" id="homeProducts"></div>
+</div>
+</section>
+<section class="page shop-page" id="products">
+<div class="pad sec">
+<h1 class="page-title">TẤT CẢ SẢN PHẨM</h1>
+<p class="muted">Khám phá các sản phẩm của FH Fashion.</p>
+</div>
+<div class="filters pad sec">
+<input aria-label="Tìm kiếm sản phẩm" id="q" type="search"/>
+<select aria-label="Size" id="fSize"><option value="">SIZE</option><option>S</option><option>M</option><option>L</option><option>XL</option></select>
+<select aria-label="Loại sản phẩm" id="fType"><option value="">LOẠI SẢN PHẨM</option><option>Áo Nam</option><option>Quần Nam</option><option>Áo Nữ</option><option>Quần Nữ</option></select>
+<select aria-label="Màu" id="fColor"><option value="">MÀU</option><option>Xanh</option><option>Đỏ</option><option>Đen</option><option>Trắng</option></select>
+<select aria-label="Giá" id="fPrice"><option value="">GIÁ</option><option value="0-299999">Dưới 300.000đ</option><option value="300000-500000">300.000đ – 500.000đ</option><option value="500001-99999999">Trên 500.000đ</option></select>
+<button class="go" id="go">LỌC</button>
+<button class="reset-filter" id="resetFilter" type="button">Đặt lại</button>
+</div>
+<div class="pad sec">
+<div class="list" id="grid"></div>
+<p class="empty" hidden="" id="empty">Không tìm thấy sản phẩm phù hợp. Hãy thử bỏ bớt bộ lọc hoặc đổi từ khóa.</p>
+<div class="pager" id="pager"></div>
+</div>
+</section>
+<section class="page shop-page" id="product">
+<div class="pad">
+<div class="detail">
+<div class="thumbs" id="thumbs"></div>
+<div class="main" id="mainImg"></div>
+<div class="info">
+<h1 id="dName"></h1>
+<p class="code" id="dCode"></p>
+<p class="price" id="dPrice"></p>
+<hr/>
+<p class="label">Màu sắc</p>
+<div class="row" id="dColors"></div>
+<p class="label" style="margin-top:12px">Size</p>
+<div class="row" id="dSizes"></div>
+<hr/>
+<div class="row">
+<div class="qty"><button aria-label="Giảm" id="minus">-</button><span id="qty">1</span><button aria-label="Tăng" id="plus">+</button></div>
+<button class="wide" id="add">Thêm vào giỏ</button>
+</div>
+<button class="wide buy" id="buy">MUA NGAY</button>
+<div class="desc"><h3>MÔ TẢ SẢN PHẨM</h3><p id="dDesc"></p></div>
+</div>
+</div>
+</div>
+<!-- Bình luận & đánh giá: chỉ người đã đăng nhập mới được gửi -->
+<div class="reviews pad sec">
+<h2>ĐÁNH GIÁ SẢN PHẨM <span id="avg"></span></h2>
+<div id="revList"></div>
+<div class="revForm">
+<p class="muted" hidden="" id="loginNote">Bạn cần <a href="#/login"><u>đăng nhập</u></a> để đánh giá. </p>
+<div class="revForm" hidden="" id="formBox">
+<div aria-label="Chọn số sao" class="stars" id="stars" role="group"></div>
+<input aria-label="Nội dung đánh giá" id="revText" type="text"/>
+<button class="pill" id="sendRev">Gửi đánh giá</button>
+</div>
+</div>
+</div>
+<div class="related pad sec">
+<h2>CÁC SẢN PHẨM LIÊN QUAN</h2>
+<div class="list" id="related"></div>
+</div>
+</section>
+<section class="page shop-page" id="about">
+<div class="about pad">
+<h1>VỀ HUY &amp; THÔNG FASHION</h1>
+<p class="lead">FH Fashion (Huy &amp; Thông Fashion) là cửa hàng thời trang nam tại Tân Phú, TP. Hồ Chí Minh, với áo thun, sweater, sơ mi, quần kaki và quần jean cho phong cách hằng ngày. <!-- Thay bằng lời giới thiệu thật --></p>
+<div class="list">
+<div class="box"><h3>Câu chuyện thương hiệu</h3><p>(Viết 2–3 câu về lý do thành lập và phong cách của cửa hàng.)</p></div>
+<div class="box"><h3>Sản phẩm</h3><p>(Mô tả chất liệu, nguồn gốc và điểm khác biệt của sản phẩm.)</p></div>
+<div class="box"><h3>Ghé cửa hàng</h3><p>613 Âu Cơ, Tân Phú, TP. Hồ Chí Minh. Mở cửa 08:00 – 22:00.</p></div>
+</div>
+</div>
+</section>
+<section class="page shop-page" id="cart">
+<div class="pad">
+<h1>GIỎ HÀNG CỦA BẠN</h1>
+<!-- Danh sách sản phẩm trong giỏ -->
+<div id="cartList"></div>
+<!-- Tổng tiền -->
+<h2 id="cartTotal">Tổng tiền: 0đ</h2>
+<!-- Nút xóa toàn bộ giỏ hàng -->
+<button class="pill" id="clearCart">
+            Xóa toàn bộ giỏ hàng
+        </button>
+<!-- Nút quay lại mua hàng -->
+<a class="pill" href="#/home">Tiếp tục mua hàng</a>
+</div>
+</section>
+<!-- SALE: sản phẩm giá tốt từ danh sách gốc, chưa tự giảm giá -->
+<section class="page shop-page" id="sale"><div class="pad sec">
+<h1 class="page-title">SẢN PHẨM GIÁ TỐT</h1>
+<p class="muted">Danh sách sản phẩm giá dưới 300.000đ. Đây là giá trong dữ liệu sản phẩm, chưa tính khuyến mãi tự động.</p>
+<div class="list" id="saleGrid"></div>
+<a class="pill" href="#/products">Xem tất cả sản phẩm</a>
+</div></section>
+<!-- HỖ TRỢ VÀ KHIẾU NẠI -->
+<section class="page support-page" id="support"><div class="hotro-banner">
+<div class="hotro-gioithieu">
+<p>LIÊN HỆ VỚI CHÚNG TÔI</p>
+<h2>GỬI YÊU CẦU ĐẶT HÀNG SỐ LƯỢNG LỚN</h2>
+</div>
+<div class="hotro-thongtin">
+<label>TÊN KH</label>
+<input id="tenkh" type="text"/>
+<label>SĐT</label>
+<input id="sdt" type="text"/>
+<label>MAIL</label>
+<input id="mail" type="email"/>
+</div>
+<div class="hotro-nut">
+<a href="#/support/khieunai">GỬI YÊU CẦU →</a>
+</div>
+</div>
+<div class="khieunai" id="khieunai">
+<div class="khieunai-trai">
+<p>LIÊN HỆ CHÚNG TÔI</p>
+<h2>MỤC KHIẾU NẠI</h2>
+<hr/>
+<p>
+                Nếu bạn gặp vấn đề với đơn hàng,
+                sản phẩm hoặc cần hỗ trợ,
+                vui lòng gửi khiếu nại để chúng tôi
+                giải quyết nhanh nhất.
+            </p>
+</div>
+<div class="khieunai-phai">
+<div class="khieunai-hang">
+<div class="khieunai-o">
+<label for="tenkn">TÊN KH</label>
+<input id="tenkn" type="text"/>
+</div>
+<div class="khieunai-o">
+<label for="mailkn">MAIL</label>
+<input id="mailkn" type="email"/>
+</div>
+<div class="khieunai-o">
+<label for="lydo">LÝ DO</label>
+<input id="lydo" type="text"/>
+</div>
+</div>
+<div class="khieunai-noidung">
+<label>NỘI DUNG KHIẾU NẠI</label>
+<input id="noidungkn" type="text"/>
+</div>
+<button class="nut-khieunai" onclick="guiKhieuNai()" type="button">
+                GỬI KHIẾU NẠI
+            </button>
+</div>
+</div>
+<div class="hotro-khoangcach"></div>
+<footer class="hotro-footer">
+<div class="hotro-footer-noidung">
+<div class="hotro-cot">
+<h3 class="hotro-tieude">THÔNG TIN LIÊN HỆ</h3>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">📞</span>
+<span class="hotro-nhan">Hotline</span>
+<strong class="hotro-giatri">090 xxx xxxx</strong>
+</div>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">✉️</span>
+<span class="hotro-nhan">Email</span>
+<strong class="hotro-giatri">daihocvanhien@gmail.com</strong>
+</div>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">🕘</span>
+<span class="hotro-nhan">Giờ mở cửa</span>
+<strong class="hotro-giatri">08:00 - 22:00</strong>
+</div>
+</div>
+<div class="hotro-cot">
+<h3 class="hotro-tieude">ĐỊA CHỈ CỦA CỬA HÀNG</h3>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">📍</span>
+<span class="hotro-nhan">Địa chỉ</span>
+<strong class="hotro-giatri">613 Âu Cơ, Tân Phú, Hồ Chí Minh, Việt Nam</strong>
+</div>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">🏢</span>
+<span class="hotro-nhan">Quận / Huyện</span>
+<strong class="hotro-giatri">Tân Phú</strong>
+</div>
+<div class="hotro-dong">
+<span class="hotro-bieutuong">ℹ️</span>
+<span class="hotro-nhan">Thông tin bổ sung</span>
+<strong class="hotro-giatri">Không có</strong>
+</div>
+</div>
+<div class="hotro-cot">
+<h3 class="hotro-tieude">HÌNH ẢNH GHIM VỊ TRÍ TRÊN BẢN ĐỒ</h3>
+<div class="hotro-ban-do">
+<span class="hotro-ghim">📍</span>
+<p class="hotro-ban-do-chu">Chèn Google Maps tại đây</p>
+</div>
+</div>
+</div>
+</footer></section>
+<!-- ĐĂNG NHẬP -->
+<section class="page auth-page" id="login"><div class="dangnhap">
+<div class="logo">
+<img alt="Logo" src="images/logo.png"/>
+</div>
+<div class="tieude">
+<h3>PHONG CÁCH ĐƯỜNG PHỐ</h3>
+<p><i>Kết nối &amp; Tự Tin</i></p>
+</div>
+<div class="noidung">
+<h3>ĐĂNG NHẬP</h3>
+<label>TÀI KHOẢN</label>
+<input id="login-taikhoan" type="text"/>
+<label>MẬT KHẨU</label>
+<input id="login-matkhau" type="password"/>
+<button class="nutdangnhap" onclick="dangNhap()" type="button"> ĐĂNG NHẬP</button>
+</div>
+<div class="dangnhapvadangki">
+<p>ĐĂNG NHẬP HOẶC ĐĂNG KÝ BẰNG</p>
+<a class="google" href="#">
+<img alt="Google" src="images/login/google.png"/>
+</a>
+<a class="facebook" href="#">
+<img alt="Facebook" src="images/login/facebook.png"/>
+</a>
+<a class="linkedin" href="#">
+<img alt="LinkedIn" src="images/login/linkedin.png"/>
+</a>
+<a class="quenmatkhau" href="#/register">
+        Chưa có tài khoản? Đăng ký
+            </a>
+</div>
+<p class="auth-status" id="loginStatus"></p><button class="auth-exit" hidden="" id="logoutBtn" onclick="dangXuat()" type="button">ĐĂNG XUẤT</button></div></section>
+<!-- ĐĂNG KÝ -->
+<section class="page auth-page" id="register"><div class="dangky">
+<div class="logo">
+<img alt="Logo" src="images/logo.png"/>
+</div>
+<div class="tieude">
+<h3>PHONG CÁCH ĐƯỜNG PHỐ</h3>
+<p><i>Kết nối &amp; Tự Tin</i></p>
+</div>
+<div class="noidung">
+<h3>ĐĂNG KÝ</h3>
+<label>TÀI KHOẢN</label>
+<input id="reg-taikhoan" type="text"/>
+<label>MẬT KHẨU</label>
+<input id="reg-matkhau" type="password"/>
+<button class="nutdangky" onclick="dangKy()" type="button">ĐĂNG KÝ</button>
+</div>
+<div class="duoi">
+<p>ĐĂNG NHẬP HOẶC ĐĂNG KÝ BẰNG</p>
+<a href="#">
+<img alt="Google" src="images/login/google.png"/>
+</a>
+<a href="#">
+<img alt="Facebook" src="images/login/facebook.png"/>
+</a>
+<a href="#">
+<img alt="LinkedIn" src="images/login/linkedin.png"/>
+</a>
+<a class="dacotaikhoan" href="#/login">
+                Đã có tài khoản? Đăng nhập
+            </a>
+</div>
+</div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
